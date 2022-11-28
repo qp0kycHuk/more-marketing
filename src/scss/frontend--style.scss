@@ -2,14 +2,14 @@
 @import '../ui/scss/_functions.scss';
 
 :root {
-	@include getColors(#D21C4B, "primary");
-	@include getColors(#CE9B44, "sec");
+	@include getColors(#E31E24, "primary");
+	@include getColors(#E31E24, "sec");
 	@include getColors(#0092E4, "blue");
 	@include getColors(#FF9820, "yellow");
 	@include getColors(#31A043, "green");
 	@include getColors(#EB5757, "red");
 	@include getColors(#828A99, "icon");
-	@include getColors(#333333, "text");
+	@include getColors(#231F20, "text");
 
 	--bg1: #E9EAEC;
 	--bg2: #F4F5F6;
@@ -25,7 +25,8 @@
 	--media-md: #{$md};
 	--media-sm: #{$sm};
 
-	--font-base: 'Roboto', Arial, Helvetica, sans-serif;
+	--font-base: 'Inter', Arial, Helvetica, sans-serif;
+	--font-alt: 'Montserrat', Arial, Helvetica, sans-serif;
 
 	--zi-l1: 321;
 	--zi-l2: 322;
