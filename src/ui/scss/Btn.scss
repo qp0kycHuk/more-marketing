@@ -230,4 +230,7 @@
 		border-radius: 50%;
 	}
 
+	&--rounded {
+		border-radius: var(--size);
+	}
 }

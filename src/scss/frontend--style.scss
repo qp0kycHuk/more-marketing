@@ -76,6 +76,36 @@ body {
 	}
 }
 
+.header {
+	display        : flex;
+	align-items    : center;
+	justify-content: space-between;
+	position       : fixed;
+	top            : 0;
+	left           : 0;
+	width          : 100%;
+	z-index        : var(--zi-l2);
+	padding-top    : 32px;
+
+	&-nav {
+		display: flex;
+
+		&__item {
+			position: relative;
+
+			&:before {
+				content : '';
+				position: absolute;
+				inset   : -24px;
+			}
+
+			&+& {
+				margin-left: 50px;
+			}
+		}
+	}
+}
+
 .started {
 	background:
 		url("../img/started-bg.jpg") no-repeat center / cover,
@@ -84,12 +114,15 @@ body {
 	color      : #fff;
 	overflow   : hidden;
 	height     : 968px;
+	max-height : 100vh;
 	padding-top: 174px;
+	position   : relative;
 
 
 	&-inner {
-		display    : flex;
-		align-items: center;
+		display      : flex;
+		align-items  : center;
+		margin-bottom: 74px;
 	}
 
 	&-content {
@@ -123,16 +156,24 @@ body {
 
 
 	&-cards {
-		animation       : started-cards 4.5s ease both;
+		// animation       : started-cards 4.5s ease both;
 		transform-origin: center -1200px;
 	}
 
 	&-card {
-		animation: started-card 4.5s ease both;
+		// animation          : started-card 4.5s ease both;
+		background     : radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+		backdrop-filter: blur(21px);
 
-		// &--1 {
-		// 	animation-delay: .2s;
-		// }
+		border       : 2px solid rgba(255, 255, 255, 0.1);
+		border-radius: 36px;
+		padding      : 36px 42px;
+		position     : relative;
+
+
+		&--1 {
+			background: radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(227, 30, 36, 0.2) 0%, rgba(227, 30, 36, 0.072) 100%);
+		}
 
 		// &--2 {
 		// 	animation-delay: .3s;
@@ -141,12 +182,40 @@ body {
 		// &--3 {
 		// 	animation-delay: .4s;
 		// }
+
+		&__light {
+			background:
+				radial-gradient(45.27% 45.27% at 49.99% 49.99%,
+					rgba(255, 255, 255, 0.4) 0%,
+					rgba(255, 255, 255, 0.25) 10%,
+					rgba(255, 255, 255, 0.1) 40%,
+					rgba(255, 255, 255, 0) 80%);
+			background-blend-mode: color-dodge;
+			mix-blend-mode       : color-dodge;
+
+			// opacity : 0.3;
+			position: absolute;
+			left    : -110px;
+			top     : -150px;
+			width   : 247px;
+			height  : 318px;
+		}
 	}
 
 	&-img {
 		position  : relative;
 		align-self: stretch;
 		flex-grow : 1;
+
+		&:before {
+			content   : '';
+			position  : absolute;
+			width     : 502px;
+			height    : 502px;
+			left      : calc(50% - 251px);
+			top       : calc(50% - 201px);
+			background: url("../img/started-circle.png") no-repeat center / contain;
+		}
 
 		img {
 			position : absolute;
@@ -156,6 +225,26 @@ body {
 			max-width: none;
 			top      : calc(50% - 320px);
 			left     : calc(50% - 360px);
+		}
+	}
+
+	&-sign {
+		font-weight: 400;
+		font-size  : 20px;
+		font-family: var(--font-alt);
+		color      : #FFFFFF;
+		opacity    : 0.5;
+		transform  : rotate(-90deg) translateX(50%);
+
+		position        : absolute;
+		left            : 75px;
+		bottom          : 0;
+		display         : flex;
+		align-items     : center;
+		transform-origin: left top;
+
+		&__arrows {
+			margin-right: 98px;
 		}
 	}
 }
@@ -182,32 +271,124 @@ body {
 	}
 }
 
-.header {
-	display        : flex;
-	align-items    : center;
-	justify-content: space-between;
-	position       : fixed;
-	top            : 0;
-	left           : 0;
-	width          : 100%;
-	z-index        : var(--zi-l2);
-	padding-top    : 32px;
+.portfolio {
+	padding-top   : 80px;
+	padding-bottom: 94px;
 
-	&-nav {
-		display: flex;
+	&__title {
+		background             : linear-gradient(94.9deg, rgba(227, 30, 36, 0.5) 0.96%, rgba(227, 30, 36, 0) 34.07%), #231F20;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip        : text;
+		text-fill-color        : transparent;
+		font-weight            : 700;
+		font-size              : 52px;
+		text-transform         : uppercase;
+		font-family            : var(--font-alt);
+		margin-bottom          : 48px;
+		width                  : max-content;
+	}
 
-		&__item {
-			position: relative;
+	&-tabs {
+		display      : flex;
+		gap          : 24px;
+		margin-bottom: 55px;
+	}
 
-			&:before {
-				content : '';
-				position: absolute;
-				inset   : -24px;
+	&-item {
+		border-radius : 36px;
+		overflow      : hidden;
+		padding       : 56px 40px 40px;
+		height        : 644px;
+		width         : 578px;
+		display       : flex;
+		flex-direction: column;
+		align-items   : flex-start;
+		position      : relative;
+
+		&__img {
+			position: absolute;
+			left    : 0;
+			top     : 0;
+			width   : 100%;
+			height  : 100%;
+
+			img {
+				width     : 100%;
+				height    : 100%;
+				object-fit: cover;
 			}
+		}
 
-			&+& {
-				margin-left: 50px;
-			}
+		&__content {
+			flex-grow     : 1;
+			display       : flex;
+			flex-direction: column;
+			align-items   : flex-start;
+			position      : relative;
+		}
+
+		&__btn {
+			margin-top: 60px;
+
+		}
+
+
+		&__manager {
+			margin-top     : auto;
+			display        : flex;
+			align-items    : center;
+			padding        : 16px;
+			border         : 1px solid rgba(255, 255, 255, 0.2);
+			background     : radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
+			filter         : drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.05));
+			backdrop-filter: blur(10px);
+
+			border-radius: 28px;
+		}
+	}
+}
+
+.steps {
+	background: radial-gradient(50% 308.82% at 50% 50%, rgba(227, 30, 36, 0) 49.33%, rgba(227, 30, 37, 0.5) 100%), #482F32;
+	color     : #fff;
+
+	&__title {
+		font-weight: 700;
+		font-size  : 52px;
+		font-family: var(--font-alt);
+
+	}
+
+	&-items {
+		display              : grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	&-item {
+		position: relative;
+
+		&:before {
+			content      : '';
+			position     : absolute;
+			width        : 9px;
+			height       : 9px;
+			border-radius: 50%;
+			background   : var(--color-primary);
+			box-shadow   : 0 0 0 3px var(--color-primary-40);
+			left         : -5px;
+			top          : -41px;
+		}
+
+		&__number {
+			font-weight            : 700;
+			font-size              : 36px;
+			background             : linear-gradient(180deg, #E31E24 0%, rgba(227, 30, 36, 0) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip        : text;
+			text-fill-color        : transparent;
+			font-family            : var(--font-alt);
 		}
 	}
 }
