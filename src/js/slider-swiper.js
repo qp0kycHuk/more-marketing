@@ -46,16 +46,29 @@ const init = () => {
 
         navigation: {
 
-            prevEl: '.quiz-slider .swiper-button-prev',
             nextEl: '.quiz-slider .swiper-button-next'
 
+        },
+
+        pagination: {
+
+            el: '.quiz-slider .swiper-pagination',
+            type: 'custom',
+
+            renderCustom: function (swiper, current, total) {
+
+                return total - current
+                
+            }
+            
         },
 
         allowTouchMove: false,
         slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 30,
-        effect: 'flip',
+        watchSlidesProgress: true,
+        type: 'fraction',
 
         on: {
 
