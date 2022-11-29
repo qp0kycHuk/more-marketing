@@ -49,6 +49,16 @@
 
     &__elems {
         flex-direction: column;
+
+        &--open {
+            animation: {
+                name           : elemsOpen;
+                duration       : 0.5s;
+                timing-function: linear;
+                iteration-count: 1;
+                fill-mode      : both;
+            }
+        }
     }
 
     &__elem {
@@ -139,6 +149,18 @@
         &__content {
             align-items: center;
         }
+    }
+}
+
+@keyframes elemsOpen {
+    0% {
+        opacity  : 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
     }
 }
 
