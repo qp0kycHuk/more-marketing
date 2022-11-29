@@ -38,4 +38,22 @@ function loadHandler() {
 	variants.init()
 	sliderSwiper.init()
 
+	document.querySelectorAll('.portfolio-item').forEach(element => {
+		let entertimeoutId
+		let leavetimeoutId
+
+		element.addEventListener('mouseenter', () => {
+			entertimeoutId = setTimeout(() => {
+				element.style.zIndex = 2
+			}, 500)
+		})
+		element.addEventListener('mouseleave', () => {
+			clearTimeout(entertimeoutId)
+			// console.log(mouseleave);
+			element.style.zIndex = ''
+			leavetimeoutId = setTimeout(() => {
+			}, 500)
+		})
+	});
 }
+
