@@ -6,6 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Worked</title>
+
+  <script>
+    const MEDIA = {
+      lg: 1259.98,
+      md: 749.98,
+      sm: 475.98
+    }
+  </script>
 </head>
 
 <body>
@@ -21,10 +29,10 @@
     </div>
 
     <a href="javascript:;" class="header-phone btn btn--white btn--link link-hover">
-      <svg class="icon text-h6 mr-5">
+      <svg class="icon text-md-h6 mr-2 mr-md-5">
         <use xlink:href="img/icons.svg#phone" />
       </svg>
-      <span class="text-subtitle-2 text--bold">8 918 000 00 00</span>
+      <span class="text-md-subtitle-2 text--bold">8 918 000 00 00</span>
     </a>
   </header>
 
@@ -42,7 +50,7 @@
           <span>больше</span> <br>
           смысла
         </div>
-        <div class="lh-1-5">
+        <div class="lh-1-5 text-body-2 text-md-body-1">
           Креативный отдел маркетинга и PR вашего <br>
           бизнеса на аутсорсе
         </div>
@@ -52,7 +60,7 @@
         <img src="img/started-dude.png" alt="">
       </div>
     </div>
-    <div class="started-cards">
+    <div class="started-cards container">
       <div class="grid grid-spacing-7">
         <div class="grid-col-4">
           <div class="started-card started-card--1">
@@ -99,134 +107,147 @@
       <button class="btn btn--contur btn--rounded">Разработка сайта</button>
     </div>
 
-    <div class="portfolio-slider">
-      <div class="portfolio-item">
-        <div class="portfolio-item__img">
-          <img src="img/protfolio/design/madina.jpg" alt="">
-        </div>
-        <div class="portfolio-item__content">
-
-          <img src="img/more.svg" alt="" class="mb-9">
-          <div class="text-h6 text--bold mb-5">Брендинг Dogsly Box</div>
-          <div class="fade-60">
-            Увеличиваем продажи клиентам <br>
-            через комплексный интернет-маркетинг
+    <div class="portfolio-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide portfolio-item">
+          <div class="portfolio-item__img">
+            <img src="img/protfolio/design/madina.jpg" alt="">
           </div>
-          <button class="portfolio-item__btn btn btn--contur">Подробнее</button>
+          <div class="portfolio-item__content">
 
-          <div class="portfolio-item__manager">
-            <div class="image image--round image--box mr-4" style="width: 64px;">
-              <img src="img/sempl.jpg" alt="">
+            <img src="img/more.svg" alt="" class="mb-5 mb-lg-9">
+            <div class="text-body-2 text-lg-h6 text--bold mb-3 mb-lg-5">Брендинг Dogsly Box</div>
+            <div class="fade-60 text-small text-lg-body-1">
+              Увеличиваем продажи клиентам <br>
+              через комплексный интернет-маркетинг
             </div>
-            <div>
-              <div class="fade-60 mb-1">Менеджер проекта</div>
-              <div class="text--demibold">Александр Николаев</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item color-white">
-        <div class="portfolio-item__img">
-          <img src="img/protfolio/design/dogsly.jpg" alt="">
-        </div>
-        <div class="portfolio-item__content">
+            <button class="portfolio-item__btn btn btn--contur">Подробнее</button>
 
-          <img src="img/more.svg" alt="" class="mb-9">
-          <div class="text-h6 text--bold mb-5">Брендинг Dogsly Box</div>
-          <div class="fade-60">
-            Увеличиваем продажи клиентам <br>
-            через комплексный интернет-маркетинг
-          </div>
-          <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
-
-          <div class="portfolio-item__manager">
-            <div class="image image--round image--box mr-4" style="width: 64px;">
-              <img src="img/sempl.jpg" alt="">
-            </div>
-            <div>
-              <div class="fade-60 mb-1">Менеджер проекта</div>
-              <div class="text--demibold">Александр Николаев</div>
+            <div class="portfolio-item__manager">
+              <div class="image image--round image--box mr-2 mr-lg-4 portfolio-item__manager-avatar">
+                <img src="img/sempl.jpg" alt="">
+              </div>
+              <div>
+                <div class="fade-60 mb-1 text-small-2 text-lg-body-2 text-lg-body-1">Менеджер проекта</div>
+                <div class="text--demibold text-small-2 text-lg-body-2 text-lg-body-1">Александр Николаев</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="portfolio-item color-white">
-        <div class="portfolio-item__img">
-          <img src="img/protfolio/design/madamo.jpg" alt="">
-        </div>
-        <div class="portfolio-item__content">
-
-          <img src="img/more.svg" alt="" class="mb-9">
-          <div class="text-h6 text--bold mb-5">Брендинг Dogsly Box</div>
-          <div class="fade-60">
-            Увеличиваем продажи клиентам <br>
-            через комплексный интернет-маркетинг
+        <div class="swiper-slide portfolio-item color-white">
+          <div class="portfolio-item__img">
+            <img src="img/protfolio/design/dogsly.jpg" alt="">
           </div>
-          <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
+          <div class="portfolio-item__content">
 
-          <div class="portfolio-item__manager">
-            <div class="image image--round image--box mr-4" style="width: 64px;">
-              <img src="img/sempl.jpg" alt="">
+            <img src="img/more.svg" alt="" class="mb-5 mb-lg-9">
+            <div class="text-body-2 text-lg-h6 text--bold mb-3 mb-lg-5">Брендинг Dogsly Box</div>
+            <div class="fade-60 text-small text-lg-body-1">
+              Увеличиваем продажи клиентам <br>
+              через комплексный интернет-маркетинг
             </div>
-            <div>
-              <div class="fade-60 mb-1">Менеджер проекта</div>
-              <div class="text--demibold">Александр Николаев</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <div class="portfolio-item__img">
-          <img src="img/protfolio/design/emotions.jpg" alt="">
-        </div>
-        <div class="portfolio-item__content">
+            <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
 
-          <img src="img/more.svg" alt="" class="mb-9">
-          <div class="text-h6 text--bold mb-5">Брендинг Dogsly Box</div>
-          <div class="fade-60">
-            Увеличиваем продажи клиентам <br>
-            через комплексный интернет-маркетинг
-          </div>
-          <button class="portfolio-item__btn btn btn--contur">Подробнее</button>
-
-          <div class="portfolio-item__manager">
-            <div class="image image--round image--box mr-4" style="width: 64px;">
-              <img src="img/sempl.jpg" alt="">
-            </div>
-            <div>
-              <div class="fade-60 mb-1">Менеджер проекта</div>
-              <div class="text--demibold">Александр Николаев</div>
+            <div class="portfolio-item__manager">
+              <div class="image image--round image--box mr-2 mr-lg-4 portfolio-item__manager-avatar">
+                <img src="img/sempl.jpg" alt="">
+              </div>
+              <div>
+                <div class="fade-60 mb-1 text-small-2 text-lg-body-2 text-lg-body-1">Менеджер проекта</div>
+                <div class="text--demibold text-small-2 text-lg-body-2 text-lg-body-1">Александр Николаев</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="portfolio-item color-white">
-        <div class="portfolio-item__img">
-          <img src="img/protfolio/design/woodluck.jpg" alt="">
-        </div>
-        <div class="portfolio-item__content">
-
-          <img src="img/more.svg" alt="" class="mb-9">
-          <div class="text-h6 text--bold mb-5">Брендинг Dogsly Box</div>
-          <div class="fade-60">
-            Увеличиваем продажи клиентам <br>
-            через комплексный интернет-маркетинг
+        <div class="swiper-slide portfolio-item color-white">
+          <div class="portfolio-item__img">
+            <img src="img/protfolio/design/madamo.jpg" alt="">
           </div>
-          <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
+          <div class="portfolio-item__content">
 
-          <div class="portfolio-item__manager">
-            <div class="image image--round image--box mr-4" style="width: 64px;">
-              <img src="img/sempl.jpg" alt="">
+            <img src="img/more.svg" alt="" class="mb-5 mb-lg-9">
+            <div class="text-body-2 text-lg-h6 text--bold mb-3 mb-lg-5">Брендинг Dogsly Box</div>
+            <div class="fade-60 text-small text-lg-body-1">
+              Увеличиваем продажи клиентам <br>
+              через комплексный интернет-маркетинг
             </div>
-            <div>
-              <div class="fade-60 mb-1">Менеджер проекта</div>
-              <div class="text--demibold">Александр Николаев</div>
+            <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
+
+            <div class="portfolio-item__manager">
+              <div class="image image--round image--box mr-2 mr-lg-4 portfolio-item__manager-avatar">
+                <img src="img/sempl.jpg" alt="">
+              </div>
+              <div>
+                <div class="fade-60 mb-1 text-small-2 text-lg-body-2 text-lg-body-1">Менеджер проекта</div>
+                <div class="text--demibold text-small-2 text-lg-body-2 text-lg-body-1">Александр Николаев</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide portfolio-item">
+          <div class="portfolio-item__img">
+            <img src="img/protfolio/design/emotions.jpg" alt="">
+          </div>
+          <div class="portfolio-item__content">
+
+            <img src="img/more.svg" alt="" class="mb-5 mb-lg-9">
+            <div class="text-body-2 text-lg-h6 text--bold mb-3 mb-lg-5">Брендинг Dogsly Box</div>
+            <div class="fade-60 text-small text-lg-body-1">
+              Увеличиваем продажи клиентам <br>
+              через комплексный интернет-маркетинг
+            </div>
+            <button class="portfolio-item__btn btn btn--contur">Подробнее</button>
+
+            <div class="portfolio-item__manager">
+              <div class="image image--round image--box mr-2 mr-lg-4 portfolio-item__manager-avatar">
+                <img src="img/sempl.jpg" alt="">
+              </div>
+              <div>
+                <div class="fade-60 mb-1 text-small-2 text-lg-body-2 text-lg-body-1">Менеджер проекта</div>
+                <div class="text--demibold text-small-2 text-lg-body-2 text-lg-body-1">Александр Николаев</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide portfolio-item color-white">
+          <div class="portfolio-item__img">
+            <img src="img/protfolio/design/woodluck.jpg" alt="">
+          </div>
+          <div class="portfolio-item__content">
+
+            <img src="img/more.svg" alt="" class="mb-5 mb-lg-9">
+            <div class="text-body-2 text-lg-h6 text--bold mb-3 mb-lg-5">Брендинг Dogsly Box</div>
+            <div class="fade-60 text-small text-lg-body-1">
+              Увеличиваем продажи клиентам <br>
+              через комплексный интернет-маркетинг
+            </div>
+            <button class="portfolio-item__btn btn btn--contur btn--white">Подробнее</button>
+
+            <div class="portfolio-item__manager">
+              <div class="image image--round image--box mr-2 mr-lg-4 portfolio-item__manager-avatar">
+                <img src="img/sempl.jpg" alt="">
+              </div>
+              <div>
+                <div class="fade-60 mb-1 text-small-2 text-lg-body-2 text-lg-body-1">Менеджер проекта</div>
+                <div class="text--demibold text-small-2 text-lg-body-2 text-lg-body-1">Александр Николаев</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <script>
+    new Swiper('.portfolio-slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      breakpoints: {
+        [MEDIA.lg]: {
+          spaceBetween: 0
+        }
+      }
+    })
+  </script>
 
   <!-- как мы работаем -->
   <section class="steps">
@@ -324,8 +345,10 @@
   <section class="variants flex flex-align-center -variants-block-">
     <div class="variants__block mb-lg-0 mb-10 p-2 p-md-6">
       <div class="variants__items flex flex-align-center h-100">
-        <div class="variants__item variants__item--small flex flex-align-center flex-justify-center flex-grow color-white h-100 py-3 py-md-5 px-3 -variants-item-">
-          <div class="variants__title font-alt text-subtitle-2 text-md-h3 text--center text--uppercase lh-1-5 mb-3 mb-md-10">
+        <div
+          class="variants__item variants__item--small flex flex-align-center flex-justify-center flex-grow color-white h-100 py-3 py-md-5 px-3 -variants-item-">
+          <div
+            class="variants__title font-alt text-subtitle-2 text-md-h3 text--center text--uppercase lh-1-5 mb-3 mb-md-10">
             Для <br class="d-none d-md-block">
             <span>малого</span> <br class="d-none d-md-block">
             бизнеса
@@ -337,8 +360,10 @@
             <span class="text-body-1 fade-40">Пакеты</span>
           </div>
         </div>
-        <div class="variants__item variants__item--middle variants__item--active flex flex-align-center flex-justify-center flex-grow color-white h-100 py-3 py-md-5 px-3 -variants-item-">
-          <div class="variants__title font-alt text-subtitle-2 text-md-h3 text--center text--uppercase lh-1-5 mb-3 mb-md-10">
+        <div
+          class="variants__item variants__item--middle variants__item--active flex flex-align-center flex-justify-center flex-grow color-white h-100 py-3 py-md-5 px-3 -variants-item-">
+          <div
+            class="variants__title font-alt text-subtitle-2 text-md-h3 text--center text--uppercase lh-1-5 mb-3 mb-md-10">
             Для <br class="d-none d-md-block">
             <span>среднего</span> <br class="d-none d-md-block">
             бизнеса
@@ -355,47 +380,68 @@
     <div class="variants__elems flex -variants-anim-">
       <div class="variants__elem flex flex-align-center mb-8 mb-md-3 -variants-elem-">
         <div class="variants__shadow variants__shadow--red p-2 mb-5 mb-md-0 mr-md-6">
-          <div class="variants__circle variants__circle--red flex flex-align-center flex-justify-center color-white w-100 h-100">
-            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Basic">Basic</div>
-            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 80 000 ₽" data-price-middle="от 100 000 ₽">от 100 000 ₽</div>
+          <div
+            class="variants__circle variants__circle--red flex flex-align-center flex-justify-center color-white w-100 h-100">
+            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Basic">
+              Basic</div>
+            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 80 000 ₽"
+              data-price-middle="от 100 000 ₽">от 100 000 ₽</div>
           </div>
         </div>
         <div class="variants__content flex flex-align-start color-white">
-          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Basic">Basic</div>
-          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt" data-text-middle="Поддержка хорошего имиджа, улучшение продаж, аудит компании и много другое – отлично для тех, кто сомневается и хочет попробовать маркетинг на вкус.">
-            Поддержка хорошего имиджа, улучшение продаж, аудит компании и много другое – отлично для тех, кто сомневается и хочет попробовать маркетинг на вкус.
+          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Basic">Basic
           </div>
-          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html" data-type="ajax">Подробнее</button>
+          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt"
+            data-text-middle="Поддержка хорошего имиджа, улучшение продаж, аудит компании и много другое – отлично для тех, кто сомневается и хочет попробовать маркетинг на вкус.">
+            Поддержка хорошего имиджа, улучшение продаж, аудит компании и много другое – отлично для тех, кто
+            сомневается и хочет попробовать маркетинг на вкус.
+          </div>
+          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html"
+            data-type="ajax">Подробнее</button>
         </div>
       </div>
       <div class="variants__elem variants__elem--end flex flex-align-center mb-8 mb-md-3 -variants-elem-">
         <div class="variants__shadow variants__shadow--white p-2 mb-5 mb-md-0 mr-md-6">
-          <div class="variants__circle variants__circle--white flex flex-align-center flex-justify-center color-text w-100 h-100">
-            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Optimal">Optimal</div>
-            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 200 000 ₽" data-price-middle="от 250 000 ₽">от 250 000 ₽</div>
+          <div
+            class="variants__circle variants__circle--white flex flex-align-center flex-justify-center color-text w-100 h-100">
+            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Optimal">
+              Optimal</div>
+            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 200 000 ₽"
+              data-price-middle="от 250 000 ₽">от 250 000 ₽</div>
           </div>
         </div>
         <div class="variants__content flex flex-align-start color-white">
-          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Optimal">Optimal</div>
-          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt" data-text-middle="Отличный вариант для компаний, которые недавно на рынке или еще не пробовали настоящий маркетинг, лучший вариант цена-качество">
-            Отличный вариант для компаний, которые недавно на рынке или еще не пробовали настоящий маркетинг, лучший вариант цена-качество
+          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Optimal">Optimal
           </div>
-          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html" data-type="ajax">Подробнее</button>
+          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt"
+            data-text-middle="Отличный вариант для компаний, которые недавно на рынке или еще не пробовали настоящий маркетинг, лучший вариант цена-качество">
+            Отличный вариант для компаний, которые недавно на рынке или еще не пробовали настоящий маркетинг, лучший
+            вариант цена-качество
+          </div>
+          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html"
+            data-type="ajax">Подробнее</button>
         </div>
       </div>
       <div class="variants__elem flex flex-align-center -variants-elem-">
         <div class="variants__shadow variants__shadow--black p-2 mb-5 mb-md-0 mr-md-6">
-          <div class="variants__circle variants__circle--black flex flex-align-center flex-justify-center color-prem w-100 h-100">
-            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Premium">Premium</div>
-            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 400 000 ₽" data-price-middle="от 500 000 ₽">от 500 000 ₽</div>
+          <div
+            class="variants__circle variants__circle--black flex flex-align-center flex-justify-center color-prem w-100 h-100">
+            <div class="text-body-1 text--center mb-1 -variants-name-" data-name-small="txt" data-name-middle="Premium">
+              Premium</div>
+            <div class="text-subtitle-1 text--center text--bold -variants-price-" data-price-small="от 400 000 ₽"
+              data-price-middle="от 500 000 ₽">от 500 000 ₽</div>
           </div>
         </div>
         <div class="variants__content flex flex-align-start color-white">
-          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Premium">Premium</div>
-          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt" data-text-middle="Для тех, кто готов на изысканный креатив, новые идеи и подход в маркетинге и PR, использование инструментов превосходящие конкурентов">
-            Для тех, кто готов на изысканный креатив, новые идеи и подход в маркетинге и PR, использование инструментов превосходящие конкурентов
+          <div class="font-alt text-h6 mb-3 -variants-title-" data-title-small="txt" data-title-middle="Premium">Premium
           </div>
-          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html" data-type="ajax">Подробнее</button>
+          <div class="text-body-1 lh-1-5 mb-5 -variants-text-" data-text-small="txt"
+            data-text-middle="Для тех, кто готов на изысканный креатив, новые идеи и подход в маркетинге и PR, использование инструментов превосходящие конкурентов">
+            Для тех, кто готов на изысканный креатив, новые идеи и подход в маркетинге и PR, использование инструментов
+            превосходящие конкурентов
+          </div>
+          <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-shop-bag.html"
+            data-type="ajax">Подробнее</button>
         </div>
       </div>
     </div>
