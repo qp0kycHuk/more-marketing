@@ -77,9 +77,15 @@ body {
 }
 
 .started {
-	background: #482F32;
-	color     : #fff;
-	overflow  : hidden;
+	background:
+		url("../img/started-bg.jpg") no-repeat center / cover,
+		linear-gradient(113.26deg, rgba(227, 30, 37, 0.6) 0%, rgba(227, 30, 36, 0) 65.03%),
+		#482F32;
+	color      : #fff;
+	overflow   : hidden;
+	height     : 968px;
+	padding-top: 174px;
+
 
 	&-inner {
 		display    : flex;
@@ -98,6 +104,12 @@ body {
 
 		text-transform: uppercase;
 		margin-bottom : 26px;
+
+		img {
+			vertical-align: middle;
+			display       : inline-block;
+			margin-bottom : 7px;
+		}
 
 		span {
 			color              : rgba(0, 0, 0, 0);
@@ -130,6 +142,22 @@ body {
 		// 	animation-delay: .4s;
 		// }
 	}
+
+	&-img {
+		position  : relative;
+		align-self: stretch;
+		flex-grow : 1;
+
+		img {
+			position : absolute;
+			display  : block;
+			height   : 725px;
+			width    : 874px;
+			max-width: none;
+			top      : calc(50% - 320px);
+			left     : calc(50% - 360px);
+		}
+	}
 }
 
 @keyframes started-card {
@@ -145,12 +173,12 @@ body {
 @keyframes started-cards {
 	0% {
 		transform: translateY(-300px) rotateZ(-90deg);
-		opacity: 0;
+		opacity  : 0;
 	}
 
 	100% {
 		transform: translateY(0) rotateZ(0deg);
-		opacity: 1;
+		opacity  : 1;
 	}
 }
 
