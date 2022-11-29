@@ -244,9 +244,9 @@
 		background         : var(--bg3);
 		border             : 1px solid var(--color-text-40);
 		background-position: center;
-		min-width          : 18px;
-		width              : 18px;
-		height             : 18px;
+		min-width          : 24px;
+		width              : 24px;
+		height             : 24px;
 		border-radius      : 50%;
 
 
@@ -258,8 +258,8 @@
 
 		&:before {
 			content      : '';
-			width        : 10px;
-			height       : 10px;
+			width        : 12px;
+			height       : 12px;
 			border-radius: 50%;
 			display      : block;
 			margin       : auto;
