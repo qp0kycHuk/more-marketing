@@ -6,13 +6,22 @@ const init = () => {
 
         const items = block.querySelectorAll('.-variants-item-')
         const elems = block.querySelectorAll('.-variants-elem-')
+        const anim = block.querySelector('.-variants-anim-')
         const currentItem = block.getElementsByClassName('variants__item--active')
+
+        let removeTimeout
 
         items.forEach(item => {
 
             item.addEventListener('click', () => {
 
                 if (item.classList.contains('variants__item--small')) {
+
+                    if (removeTimeout) clearTimeout(removeTimeout)
+
+                    anim.classList.add('variants__elems--open')
+
+                    removeTimeout = setTimeout(() => anim.classList.remove('variants__elems--open'), 550)
 
                     currentItem[0].className = currentItem[0].className.replace('variants__item--active', '')
                     item.className += ' variants__item--active'
@@ -34,6 +43,12 @@ const init = () => {
                 }
 
                 if (item.classList.contains('variants__item--middle')) {
+
+                    if (removeTimeout) clearTimeout(removeTimeout)
+
+                    anim.classList.add('variants__elems--open')
+
+                    removeTimeout = setTimeout(() => anim.classList.remove('variants__elems--open'), 550)
 
                     currentItem[0].className = currentItem[0].className.replace('variants__item--active', '')
                     item.className += ' variants__item--active'
