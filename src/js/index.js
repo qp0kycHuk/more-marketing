@@ -7,6 +7,8 @@ import scrollTo from "./scrollTo";
 import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
 import ripple from 'npm-kit-ripple';
+import variants from './variants';
+import sliderSwiper from './slider-swiper';
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy } from 'swiper';
 
 
@@ -32,5 +34,8 @@ function loadHandler() {
 	ripple.attach('.btn')
 	ripple.attach('.waved')
 	ripple.deAttach('.btn--link')
+
+	variants.init()
+	sliderSwiper.init()
 
 }
