@@ -1,0 +1,157 @@
+.variants {
+    background: {
+        color   : #482F32;
+        image   : url('../img/variants-bg.png');
+        repeat  : no-repeat;
+        position: center;
+        size    : cover;
+    }
+
+    padding: {
+        top   : 53px;
+        bottom: 53px;
+    }
+
+    &__block {
+        min-width      : 640px;
+        width          : 640px;
+        height         : 640px;
+        border-radius  : 50%;
+        background     : radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 100%);
+        backdrop-filter: blur(21px);
+    }
+
+    &__items {
+        background-image: radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%);
+        backdrop-filter : blur(21px);
+        border-radius   : 50%;
+        overflow        : hidden;
+    }
+
+    &__item {
+        transition    : 0.2s;
+        flex-direction: column;
+        cursor        : pointer;
+
+        &--active {
+            background-color: rgba(129, 11, 15, 0.3);
+        }
+    }
+
+    &__title span {
+        color: #e53b40;
+    }
+
+    &__shildik {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius   : 100px;
+    }
+
+    &__elems {
+        flex-direction: column;
+    }
+
+    &__elem {
+        margin-left: -130px;
+
+        &--end {
+            margin-left: -50px;
+        }
+    }
+
+    &__shadow {
+        min-width      : 210px;
+        width          : 210px;
+        height         : 210px;
+        border         : 2px solid rgba(255, 255, 255, 0.05);
+        border-radius  : 50%;
+        backdrop-filter: blur(21px);
+
+        &--red {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(227, 30, 36, 0.4) 0%, rgba(227, 30, 36, 0.3) 100%);
+        }
+
+        &--white {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
+        }
+
+        &--black {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(76, 53, 59, 0.4) 0%, rgba(76, 53, 59, 0.35) 100%);
+        }
+    }
+
+    &__circle {
+        border-radius  : 50%;
+        flex-direction : column;
+        box-shadow     : -8px 8px 12px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(21px);
+
+        &--red {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, #E31E24 0%, rgba(227, 30, 36, 0.3) 100%);
+        }
+
+        &--white {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, #ffffff 0%, rgba(255, 255, 255, 0.3) 100%);
+        }
+
+        &--black {
+            background: radial-gradient(98.48% 326.98% at 0% 3.35%, #4C353B 0%, rgba(76, 53, 59, 0.35) 100%);
+        }
+    }
+
+    &__content {
+        flex-direction: column;
+    }
+
+    @media(hover) {
+        &__item:hover {
+            background-color: rgba(129, 11, 15, 0.3);
+        }
+    }
+
+    @media(max-width: $lg) {
+        & {
+            flex-direction: column;
+        }
+
+        &__elem {
+            margin-left: 0;
+        }
+    }
+
+    @media(max-width: $md) {
+        &__block {
+            min-width    : auto;
+            width        : 100%;
+            height       : auto;
+            border-radius: 24px;
+        }
+
+        &__items {
+            border-radius: 24px;
+        }
+
+        &__elem {
+            flex-direction: column;
+            text-align    : center;
+        }
+
+        &__content {
+            align-items: center;
+        }
+    }
+}
+
+.quiz {
+    background: {
+        image   : url('../img/quiz-bg.png');
+        repeat  : no-repeat;
+        position: center;
+        size    : cover;
+    }
+
+    padding: {
+        top   : 63px;
+        bottom: 98px;
+    }
+}

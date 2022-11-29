@@ -33,6 +33,9 @@
 		<symbol id="cross" width="100%" height="100%" viewBox="0 0 16 16">
 			<path d="M1 15L15 1M1 1L15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
+		<symbol id="shop-bag" width="100%" height="100%" viewBox="0 0 21 21">
+			<path d="M13.4782 8.98547V5.6159C13.4782 3.75494 11.9696 2.24634 10.1086 2.24634C8.24768 2.24634 6.73907 3.75494 6.73907 5.6159V8.98547M4.2119 7.30069H16.0054L16.8478 17.4094H3.36951L4.2119 7.30069Z" fill="rgba(0, 0, 0, 0)" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</symbol>
 		<!--  -->
 		<!--  -->
 		<!--  -->

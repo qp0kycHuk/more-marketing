@@ -44,6 +44,10 @@
 		color: var(--color-text);
 	}
 
+	&-prem {
+		color: var(--color-prem);
+	}
+
 	&-hover {
 		&-blue {
 			@media(hover) {
