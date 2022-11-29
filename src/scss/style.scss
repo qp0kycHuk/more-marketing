@@ -176,4 +176,55 @@
         top   : 63px;
         bottom: 98px;
     }
+
+    &-slider {
+        background-color: #fff;
+        border-radius   : 36px;
+        position        : relative;
+
+        &:is(&--stop) .swiper-button-next {
+            pointer-events: none;
+            opacity       : 0.5;
+        }
+
+        &:is(&--end) .quiz-info {
+            display: none;
+        }
+    }
+
+    &-slide {
+        padding: {
+            top  : 45px;
+            left : 56px;
+            right: 56px;
+        }
+    }
+
+    &-label {
+        background-color: #F5F5F5;
+        border-radius   : 18px;
+    }
+
+    &-info {
+        padding: {
+            bottom: 45px;
+            left  : 56px;
+            right : 56px;
+        }
+    }
+
+    &-image {
+        position     : relative;
+        border-radius: 36px;
+        overflow     : hidden;
+
+        & img {
+            position  : absolute;
+            top       : 0;
+            left      : 0;
+            right     : 0;
+            bottom    : 0;
+            object-fit: cover;
+        }
+    }
 }
