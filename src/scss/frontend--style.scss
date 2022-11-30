@@ -277,17 +277,12 @@ body {
 	padding-bottom: 94px;
 
 	&__title {
-		background             : linear-gradient(94.9deg, rgba(227, 30, 36, 0.5) 0.96%, rgba(227, 30, 36, 0) 34.07%), #231F20;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip        : text;
-		text-fill-color        : transparent;
-		font-weight            : 700;
-		font-size              : 52px;
-		text-transform         : uppercase;
-		font-family            : var(--font-alt);
-		margin-bottom          : 48px;
-		width                  : max-content;
+		font-weight   : 700;
+		font-size     : 52px;
+		text-transform: uppercase;
+		font-family   : var(--font-alt);
+		margin-bottom : 48px;
+		width         : max-content;
 	}
 
 	&-tabs {
