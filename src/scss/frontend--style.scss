@@ -87,6 +87,8 @@ body {
 	width          : 100%;
 	z-index        : var(--zi-l2);
 	padding-top    : 32px;
+	padding-bottom : 32px;
+	transition     : .5s ease;
 
 	@media(max-width:$lg) {
 		padding-top: 20px;
@@ -119,6 +121,12 @@ body {
 			}
 		}
 	}
+}
+
+.scroll .header {
+	background    : radial-gradient(50% 308.82% at 50% 50%, rgba(227, 30, 36, 0) 49.33%, rgba(227, 30, 37, 0.5) 100%), #482F32;
+	padding-top   : 20px;
+	padding-bottom: 20px;
 }
 
 .title {
@@ -390,8 +398,17 @@ body {
 	padding-top   : 80px;
 	padding-bottom: 94px;
 
+	@media(max-width:$sm) {
+		padding-top   : 32px;
+		padding-bottom: 32px;
+	}
+
 	&__title {
 		margin-bottom: 48px;
+
+		@media(max-width:$sm) {
+			margin-bottom: 24px;
+		}
 	}
 
 	&-tabs {
@@ -406,8 +423,18 @@ body {
 		padding-right : 15px;
 		overflow      : auto;
 
+		@media(max-width:$sm) {
+			gap: 10px;
+		}
+
 		.btn {
 			white-space: nowrap;
+
+			@media(max-width:$sm) {
+				--size       : 44px;
+				padding-left : 15px;
+				padding-right: 15px;
+			}
 
 			&:not(.tab-active) {
 				border-color: rgba(0, 0, 0, 0);
@@ -588,7 +615,9 @@ body {
 	position      : relative;
 
 	@media(max-width:$sm) {
-		background: radial-gradient(50% 308.82% at 50% 50%, rgba(227, 30, 36, 0) 49.33%, rgba(227, 30, 37, 0.15) 100%), #482F32;
+		padding-top   : 42px;
+		padding-bottom: 42px;
+		background    : radial-gradient(50% 308.82% at 50% 50%, rgba(227, 30, 36, 0) 49.33%, rgba(227, 30, 37, 0.15) 100%), #482F32;
 	}
 
 	&__title {
@@ -709,4 +738,87 @@ body {
 			}
 		}
 	}
+}
+
+
+.service {
+	padding-top   : 80px;
+	padding-bottom: 100px;
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&-item {
+		&+& {
+			border-top: 1px solid var(--color-text-20);
+		}
+
+		&__btn {
+			margin-left: 92px;
+		}
+	}
+
+	&-block {
+		background   : linear-gradient(106.15deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 61.23%), #C62328;
+		border-radius: 36px;
+		padding      : 52px 40px 5px;
+		color        : #fff;
+		margin-top   : 42px;
+		overflow     : hidden;
+
+		&-sign {
+			display    : flex;
+			white-space: nowrap;
+
+			&--1 {
+				margin-left: -40px;
+			}
+
+			&__item {
+				font-weight   : 700;
+				font-size     : 64px;
+				font-family   : var(--font-alt);
+				text-transform: uppercase;
+
+				&+& {
+					margin-left: 15px;
+				}
+
+				&--1 {
+					background             : linear-gradient(94.9deg, rgba(227, 30, 36, 0.6) 0.96%, rgba(227, 30, 36, 0) 34.07%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip        : text;
+					text-fill-color        : transparent;
+					-webkit-text-stroke    : 1px rgba(255, 255, 255, 0.4);
+				}
+
+				&--2 {
+					background             : linear-gradient(94.9deg, rgba(227, 30, 36, 0.6) 0.96%, rgba(227, 30, 36, 0) 34.07%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip        : text;
+					text-fill-color        : transparent;
+					-webkit-text-stroke    : 1px rgba(255, 255, 255, 0.2);
+				}
+
+				&--3 {
+					background : radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.068) 99.99%, rgba(255, 255, 255, 0.068) 100%)
+						/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+					;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip        : text;
+					text-fill-color        : transparent;
+				}
+			}
+		}
+	}
+
+	&-block &-item+&-item {
+		border-top-color: rgba(255, 255, 255, 0.2);
+
+	}
+
 }
