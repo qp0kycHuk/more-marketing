@@ -557,3 +557,73 @@
         }
     }
 }
+
+.package {
+    max-width    : 970px;
+    border-radius: 36px;
+    overflow     : hidden;
+
+    &__content {
+        background: {
+            color: #482F32;
+            image: linear-gradient(106.33deg, rgba(227, 30, 36, 0) 49.36%, rgba(227, 28, 35, 0.3) 84.83%);
+        }
+
+        padding : 50px;
+
+        &--bg {
+            background: {
+                image   : url('../img/package-bg.png'), linear-gradient(106.33deg, rgba(227, 30, 36, 0) 49.36%, rgba(227, 28, 35, 0.3) 84.83%);
+                repeat  : no-repeat;
+                position: center;
+                size    : cover;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 360px;
+    }
+
+    &__form {
+        padding: 50px 60px;
+    }
+
+    &__title {
+        width        : max-content;
+        margin-bottom: 50px;
+    }
+
+    @media(max-width: $lg) {
+        &__block {
+            align-items   : flex-start;
+            flex-direction: column;
+        }
+
+        &__content,
+        &__form {
+            width  : 100%;
+            padding: 40px;
+        }
+    }
+
+    @media(max-width: $md) {
+        &__logo {
+            max-width: 250px;
+        }
+
+        &__content,
+        &__form {
+            padding: 30px 20px;
+        }
+
+        &__form {
+            padding-bottom: 50px;
+        }
+
+        &__title {
+            width        : auto;
+            margin-bottom: 20px;
+        }
+    }
+}
