@@ -55,5 +55,14 @@ function loadHandler() {
 			}, 500)
 		})
 	});
+
+
+	window.addEventListener('scroll', scrollHandler)
+	scrollHandler()
 }
 
+function scrollHandler() {
+	document.body.classList.toggle('scroll-top', window.scrollY <= 0)
+	document.body.classList.toggle('scroll', window.scrollY > 0)
+
+}
