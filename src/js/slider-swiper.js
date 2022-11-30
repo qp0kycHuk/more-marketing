@@ -37,8 +37,7 @@ const init = () => {
 
         allowTouchMove: false,
         slidesPerView: 1,
-        slidesPerGroup: 1,
-        effect: 'cube'
+        slidesPerGroup: 1
 
     })
 
@@ -58,9 +57,9 @@ const init = () => {
             renderCustom: function (swiper, current, total) {
 
                 return total - current
-                
+
             }
-            
+
         },
 
         allowTouchMove: false,
@@ -89,6 +88,34 @@ const init = () => {
                 }
 
             }
+
+        }
+
+    })
+
+    const partnersSlider = new Swiper('.partners-slider .swiper', {
+
+        slidesPerView: 'auto',
+        watchSlidesProgress: true,
+        loop: true,
+
+        navigation: {
+            nextEl: '.partners-slider .slider-next',
+            prevEl: '.partners-slider .slider-prev'
+        },
+
+        pagination: {
+
+            el: '.partners-slider .swiper-pagination',
+            clickable: true
+
+        },
+
+        autoplay: {
+
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false
 
         }
 

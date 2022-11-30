@@ -100,6 +100,7 @@
   <!-- Кейсы -->
   <section class="portfolio" data-tab-cover>
     <div class="portfolio__title title title--gradient">Кейсы</div>
+
     <div class="portfolio-tabs">
       <button class="btn btn--contur btn--rounded" data-tab-link="1">Дизайн</button>
       <button class="btn btn--contur btn--rounded" data-tab-link="2">Маркетинг</button>
@@ -926,36 +927,40 @@
   </section>
 
   <section class="quiz">
+    <div class="quiz__title text-clip font-alt">
+      ПОЛУЧИ СЕРТИФИКАТ <span>на 5000 ₽</span> <br>
+      и БОЛЬШЕ ПОДАРКОВ
+    </div>
     <div class="grid grid-spacing-7">
-      <div class="grid-col-6">
-        <div class="quiz-slider quiz-slider--stop" data-quiz>
+      <div class="grid-col-lg-6">
+        <form class="quiz-slider quiz-slider--stop" data-quiz>
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
-                  <div class="font-alt text-h6 text--bold mb-10">Что вам требуется?</div>
+                  <div class="font-alt text-h6 text--bold mb-5 mb-md-10">Что вам требуется?</div>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="requirements">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Запускаю start up</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="requirements">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Масштабирую бизнес</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="requirements">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Подумываю о ребрендинге</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="requirements">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Дошел до точки</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="requirements">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Иное</div>
                   </label>
@@ -963,24 +968,24 @@
               </div>
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
-                  <div class="font-alt text-h6 text--bold mb-10">Что требуется вашему бизнесу?</div>
+                  <div class="font-alt text-h6 text--bold mb-5 mb-md-10">Что требуется вашему бизнесу?</div>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="business">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Больше трафика</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="business">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Больше популярности</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="business">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Больше продаж</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="business">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Иное</div>
                   </label>
@@ -988,24 +993,24 @@
               </div>
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
-                  <div class="font-alt text-h6 text--bold mb-10">Вы разрешите нам эксперементировать?</div>
+                  <div class="font-alt text-h6 text--bold mb-5 mb-md-10">Вы разрешите нам эксперементировать?</div>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="permission">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Люблю креатив</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="permission">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Хочу, но осознаю риски</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="permission">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Я консерватор</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="permission">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Иное</div>
                   </label>
@@ -1013,29 +1018,29 @@
               </div>
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
-                  <div class="font-alt text-h6 text--bold mb-10">Где о вас узнают клиенты?</div>
+                  <div class="font-alt text-h6 text--bold mb-5 mb-md-10">Где о вас узнают клиенты?</div>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="client">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Сайт и блог</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="client">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Социальные сети</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="client">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">СМИ</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4 mb-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="client">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Сарафанное радио</div>
                   </label>
                   <label class="quiz-label form-field form-checkbox w-100 py-5 px-4">
-                    <input type="radio" class="form-input-checkbox">
+                    <input type="radio" class="form-input-checkbox" name="client">
                     <div class="form-radio-target"></div>
                     <div class="text-body-1 text--bold ml-3">Иное</div>
                   </label>
@@ -1043,8 +1048,7 @@
               </div>
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
-                  <div class="font-alt text-h6 text--bold mb-10">Укажите ссылку на ваш сайт <br>или блог (если есть)
-                  </div>
+                  <div class="font-alt text-h6 text--bold mb-5 mb-md-10">Укажите ссылку на ваш сайт <br>или блог (если есть)</div>
                   <label class="form-field">
                     <div class="text-body-2 text--demibold mb-2">Сайт или блог</div>
                     <div class="form-input-cover">
@@ -1056,31 +1060,31 @@
               <div class="swiper-slide h-auto" data-quiz-slide>
                 <div class="quiz-slide h-100">
                   <div class="font-alt text-h6 text--bold mb-5">Поздравляем! Вы дошли до финала!</div>
-                  <div class="font-alt text-subtitle-2 text--nor,al mb-5">
+                  <div class="font-alt text-body-1 text-md-subtitle-2 text--nor,al mb-5">
                     Напишите данные, куда мы можем <br>
                     выслать ваши подарки
                   </div>
                   <label class="form-field mb-6">
                     <div class="text-body-2 text--demibold mb-2">Имя</div>
                     <div class="form-input-cover">
-                      <input type="text" class="form-input" placeholder="http//">
+                      <input type="text" class="form-input" required>
                     </div>
                   </label>
                   <label class="form-field mb-6">
                     <div class="text-body-2 text--demibold mb-2">Телефон</div>
                     <div class="form-input-cover">
-                      <input type="tel" class="form-input" placeholder="">
+                      <input type="tel" class="form-input" required>
                     </div>
                   </label>
-                  <div class="text-body-2 text--demibold mb-2">Телефон</div>
-                  <div class="flex flex-align-center">
-                    <label class="form-field form-checkbox bd-all brs-2 w-100 py-3 px-4 mr-4">
-                      <input type="radio" class="form-input-checkbox">
+                  <div class="text-body-2 text--demibold mb-2">Удобный мессенджер</div>
+                  <div class="quiz-social flex flex-align-center">
+                    <label class="form-field form-checkbox bd-all brs-2 w-100 py-3 px-4 mr-md-4 mb-4 mb-md-0">
+                      <input type="radio" class="form-input-checkbox" name="social">
                       <div class="form-radio-target"></div>
                       <div class="text-body-1 text--bold ml-3">Telegram</div>
                     </label>
                     <label class="form-field form-checkbox bd-all brs-2 w-100 py-3 px-4">
-                      <input type="radio" class="form-input-checkbox">
+                      <input type="radio" class="form-input-checkbox" name="social">
                       <div class="form-radio-target"></div>
                       <div class="text-body-1 text--bold ml-3">WhatsApp</div>
                     </label>
@@ -1099,16 +1103,54 @@
                 *осталось <span class="swiper-pagination"></span> вопроса, чтоб забрать свои подарки
               </div>
             </div>
+            <div class="quiz-submit d-none mt-8">
+              <button class="btn btn--primary btn--fill mb-5" type="submit">Получить подарок</button>
+              <div class="text-body-2 text-md-body-1 fade-40">
+                Отправляя форму Вы даете согласие на обработку <br class="d-none d-md-block">
+                Ваших персональных данных
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-      <div class="grid-col-6">
-        <div class="quiz-image-slider h-100">
+      <div class="grid-col-lg-6">
+        <div class="quiz-image-slider d-none d-md-block h-100">
           <div class="swiper h-100">
             <div class="swiper-wrapper h-100">
               <div class="swiper-slide h-auto">
-                <div class="quiz-image w-100 h-100">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
                   <img class="w-100 h-100" src="img/quiz-1.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
+                  <img class="w-100 h-100" src="img/quiz-2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
+                  <img class="w-100 h-100" src="img/quiz-3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
+                  <img class="w-100 h-100" src="img/quiz-4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
+                  <img class="w-100 h-100" src="img/quiz-5.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide h-auto">
+                <div class="quiz-image progress-container w-100 h-100">
+                  <div class="progress progress-circle"></div>
+                  <img class="w-100 h-100" src="img/quiz-6.png" alt="">
                 </div>
               </div>
             </div>
@@ -1118,6 +1160,177 @@
     </div>
   </section>
 
+  <section class="permission">
+    <div class="permission__title text-clip font-alt">другой подход</div>
+    <div class="grid grid-spacing-7">
+      <div class="grid-col-lg-4">
+        <div class="permission__item bg-l1 color-text py-5 px-5 py-md-10 px-md-8">
+          <img class="permission__lines" src="img/lines-1.png" alt="">
+          <div class="permission__content">
+            <img class="permission__icon icon text-h3 d-block" src="img/more.svg" alt="">
+            <div class="text-subtitle-2 text-md-h6 text--bold mb-3 mb-md-5">Гарантируем хороший <br>результат</div>
+            <div class="text-body-2 text-md-body-1 lh-1-5 fade-60">
+              Маркетинговая стратегия выявляет ваши конкурентные преимущества. Определяет наиболее эффективные каналы продвижения
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-col-lg-4">
+        <div class="permission__item bg-black color-white py-5 px-5 py-md-10 px-md-8">
+          <img class="permission__lines" src="img/lines-2.png" alt="">
+          <div class="permission__content">
+            <img class="permission__icon icon text-h3 d-block" src="img/more.svg" alt="">
+            <div class="text-subtitle-2 text-md-h6 text--bold mb-3 mb-md-5">Не работаем с вашими <br>конкурентами</div>
+            <div class="text-body-2 text-md-body-1 lh-1-5 fade-60">
+              Маркетинговая стратегия выявляет ваши конкурентные преимущества. Определяет наиболее эффективные каналы продвижения
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-col-lg-4">
+        <div class="permission__item permission__item--red color-white py-5 px-5 py-md-10 px-md-8">
+          <img class="permission__lines" src="img/lines-3.png" alt="">
+          <div class="permission__content">
+            <img class="permission__icon icon text-h3 d-block" src="img/more-white.svg" alt="">
+            <div class="text-subtitle-2 text-md-h6 text--bold mb-3 mb-md-5">Улучшим показатели <br>всей фирмы</div>
+            <div class="text-body-2 text-md-body-1 lh-1-5 fade-60">
+              Маркетинговая стратегия выявляет ваши конкурентные преимущества. Определяет наиболее эффективные каналы продвижения
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="partners__title text-clip font-alt">партнеры</div>
+    <div class="partners-slider">
+      <div class="swiper grid-wrap grid-spacing-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4 h-auto">
+            <div class="partners-slide bg-l3 flex flex-align-center flex-justify-center py-5 px-4 py-md-8 px-md-8">
+              <div class="partners__img w-100 mb-5 mb-md-10">
+                <img class="w-100 h-100" src="img/partner-1.png" alt="">
+              </div>
+              <div class="text-subtitle-2 text-md-h6 text--bold text--center mb-2">Екатерина Балашова</div>
+              <div class="text-body-2 text-md-subtitle-2 text--center fade-60">Специалист ВЭД</div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4 h-auto">
+            <div class="partners-slide bg-l3 flex flex-align-center flex-justify-center py-5 px-4 py-md-8 px-md-8">
+              <div class="partners__img w-100 mb-5 mb-md-10">
+                <img class="w-100 h-100" src="img/partner-2.png" alt="">
+              </div>
+              <div class="text-subtitle-2 text-md-h6 text--bold text--center mb-2">WayLinks</div>
+              <div class="text-body-2 text-md-subtitle-2 text--center fade-60">Автоматизация бизнеса</div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4 h-auto">
+            <div class="partners-slide bg-l3 flex flex-align-center flex-justify-center py-5 px-4 py-md-8 px-md-8">
+              <div class="partners__img w-100 mb-5 mb-md-10">
+                <img class="w-100 h-100" src="img/partner-3.png" alt="">
+              </div>
+              <div class="text-subtitle-2 text-md-h6 text--bold text--center mb-2">Федерация отельеров <br>и рестораторов России</div>
+              <div class="text-body-2 text-md-subtitle-2 text--center fade-60">Развитие сферы гостеприимства</div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4 h-auto">
+            <div class="partners-slide bg-l3 flex flex-align-center flex-justify-center py-5 px-4 py-md-8 px-md-8">
+              <div class="partners__img w-100 mb-5 mb-md-10">
+                <img class="w-100 h-100" src="img/partner-4.png" alt="">
+              </div>
+              <div class="text-subtitle-2 text-md-h6 text--bold text--center mb-2">Самрат</div>
+              <div class="text-body-2 text-md-subtitle-2 text--center fade-60">Бухгалтерская компания</div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4 h-auto">
+            <div class="partners-slide bg-l3 flex flex-align-center flex-justify-center py-5 px-4 py-md-8 px-md-8">
+              <div class="partners__img w-100 mb-5 mb-md-10">
+                <img class="w-100 h-100" src="img/partner-5.png" alt="">
+              </div>
+              <div class="text-subtitle-2 text-md-h6 text--bold text--center mb-2">Олеси</div>
+              <div class="text-body-2 text-md-subtitle-2 text--center fade-60">Юридическая компания</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="partners__btn slider-btn slider-prev btn btn--white btn--fill">
+        <svg class="icon text-subtitle-2">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="partners__btn slider-btn slider-next btn btn--white btn--fill">
+        <svg class="icon text-subtitle-2">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+      <div class="swiper-pagination flex flex-align-center flex-justify-center mt-10"></div>
+    </div>
+  </section>
+
+  <footer class="footer color-white">
+    <div class="footer__top flex flex-wrap flex-align-center flex-justify-between bd-bottom pb-5 mb-5 pb-md-10 mb-md-10">
+      <div class="footer__title text--uppercase font-alt mb-5 mb-md-0">Наши контакты</div>
+      <button class="btn btn--primary btn--fill px-10">Связаться с нами</button>
+    </div>
+    <div class="footer__bottom flex flex-wrap flex-align-center flex-justify-between">
+      <a class="footer__logo w-100 mb-5 mb-lg-0" href="">
+        <img class="w-100" src="img/logo.svg" alt="">
+      </a>
+      <div class="footer__items flex flex-wrap flex-align-center flex-justify-between mb-5 mb-lg-0">
+        <div class="footer__item flex flex-align-center mb-5 mb-md-0 mr-0 mr-md-5 mr-lg-10">
+          <div class="footer__img flex flex-align-center flex-justify-center mr-2 mr-lg-4">
+            <svg class="icon text-h6 color-primary">
+              <use xlink:href="img/icons.svg#doc" />
+            </svg>
+          </div>
+          <div class="footer__content flex">
+            <span class="text-body-1 text-lg-body-0 text--demibold mb-1">ИНН 5041213624</span>
+            <span class="text-body-2 fade-60">КПП 504101001</span>
+          </div>
+        </div>
+        <a class="footer__item flex flex-align-center link-hover mb-5 mb-md-0 mr-0 mr-md-5 mr-lg-10" href="mailto: nk@bolshe-marketing.ru">
+          <div class="footer__img flex flex-align-center flex-justify-center mr-4">
+            <svg class="icon text-h6 color-primary">
+              <use xlink:href="img/icons.svg#message" />
+            </svg>
+          </div>
+          <div class="footer__content flex">
+            <span class="text-body-1 text-lg-body-0 text--demibold mb-1">nk@bolshe-marketing.ru</span>
+            <span class="text-body-2 fade-60">Пишите по всем вопросам</span>
+          </div>
+        </a>
+        <a class="footer__item flex flex-align-center link-hover" href="tel: 8 (952) 269 70 75">
+          <div class="footer__img flex flex-align-center flex-justify-center mr-4">
+            <svg class="icon text-h6 color-primary">
+              <use xlink:href="img/icons.svg#tel" />
+            </svg>
+          </div>
+          <div class="footer__content flex">
+            <span class="text-body-1 text-lg-body-0 text--demibold mb-1">8 (952) 269 70 75</span>
+            <span class="text-body-2 fade-60">Отдель консультации</span>
+          </div>
+        </a>
+      </div>
+      <div class="footer__social flex flex-align-center">
+        <a class="footer__link btn btn--white btn--light p-0 mr-3" href="">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#tg" />
+          </svg>
+        </a>
+        <a class="footer__link btn btn--white btn--light p-0 mr-3" href="">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#vk" />
+          </svg>
+        </a>
+        <a class="footer__link btn btn--white btn--light p-0" href="">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#ok" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
