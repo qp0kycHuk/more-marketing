@@ -13,6 +13,7 @@ import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, Effe
 
 
 import '../scss/index.scss';
+import LocomotiveScroll from "locomotive-scroll";
 
 Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy]);
 Swiper.defaults.touchStartPreventDefault = false
@@ -37,6 +38,11 @@ function loadHandler() {
 
 	variants.init()
 	sliderSwiper.init()
+
+	const scroll = new LocomotiveScroll({
+		offset: [100, 0],
+		repeat:true
+	});
 
 	document.querySelectorAll('.portfolio-item').forEach(element => {
 		let entertimeoutId
