@@ -94,6 +94,11 @@ body {
 		padding-top: 20px;
 	}
 
+	@media(max-width:$sm) {
+		padding-top   : 20px;
+		padding-bottom: 20px;
+	}
+
 	&-logo {
 		@media(max-width:$md) {
 			width: 120px;
@@ -127,6 +132,11 @@ body {
 	background    : radial-gradient(50% 308.82% at 50% 50%, rgba(227, 30, 36, 0) 49.33%, rgba(227, 30, 37, 0.5) 100%), #482F32;
 	padding-top   : 20px;
 	padding-bottom: 20px;
+
+	@media(max-width:$sm) {
+		padding-top   : 10px;
+		padding-bottom: 10px;
+	}
 }
 
 .title {
@@ -171,6 +181,7 @@ body {
 		padding-top   : 220px;
 		padding-bottom: 150px;
 		height        : auto;
+		max-height    : none;
 	}
 
 	@media(max-width:$md) {
@@ -756,6 +767,29 @@ body {
 
 		&__btn {
 			margin-left: 92px;
+			width      : 142px;
+
+			@media(max-width:$md) {
+				margin-left: 20px;
+				--size     : 40px;
+				font-size  : 14px;
+				width      : 120px;
+			}
+
+			@media(max-width:$sm) {
+				margin-left: 20px;
+				--size     : 32px;
+				font-size  : 12px;
+				width      : 100px;
+			}
+		}
+
+		.icon {
+			transition: .25s ease;
+		}
+
+		&.toggle-active .icon {
+			transform: rotateZ(-90deg);
 		}
 	}
 
@@ -766,6 +800,15 @@ body {
 		color        : #fff;
 		margin-top   : 42px;
 		overflow     : hidden;
+
+		@media(max-width:$sm) {
+			width        : calc(100% + 30px);
+			padding-left : 15px;
+			padding-right: 15px;
+			margin-left  : -15px;
+			border-radius: 0;
+			padding-top  : 20px;
+		}
 
 		&-sign {
 			display    : flex;
