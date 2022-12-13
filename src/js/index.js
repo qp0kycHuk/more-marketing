@@ -40,7 +40,7 @@ function loadHandler() {
 	sliderSwiper.init()
 
 	const scroll = new LocomotiveScroll({
-		offset: [100, 0],
+		offset: [50, 0],
 		repeat:true
 	});
 

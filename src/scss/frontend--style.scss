@@ -214,12 +214,12 @@ body {
 		url("../img/started-bg.jpg") no-repeat center / cover,
 		linear-gradient(113.26deg, rgba(227, 30, 37, 0.6) 0%, rgba(227, 30, 36, 0) 65.03%),
 		#482F32;
-	color      : #fff;
-	overflow   : hidden;
-	height     : 968px;
-	max-height : 100vh;
-	padding-top: 174px;
-	position   : relative;
+	color         : #fff;
+	overflow      : hidden;
+	height        : 968px;
+	// max-height : 100vh;
+	padding-top   : 174px;
+	position      : relative;
 
 	@media(max-width:$lg) {
 		padding-top   : 220px;
@@ -230,6 +230,7 @@ body {
 
 	@media(max-width:$md) {
 		padding-bottom: 20px;
+		padding-top   : 40px;
 	}
 
 	&-inner {
@@ -281,6 +282,10 @@ body {
 		@media(max-width:$md) {
 			font-size    : 42px;
 			margin-bottom: 12px;
+		}
+
+		@media(max-width:$sm) {
+			font-size: 32px;
 		}
 
 		img {
@@ -388,7 +393,8 @@ body {
 		}
 
 		@media(max-width:$md) {
-			width: 100%;
+			width        : 100%;
+			// margin-top: -100px;
 		}
 	}
 
@@ -402,7 +408,7 @@ body {
 
 		@media(max-width:$md) {
 			order : -1;
-			height: 180px;
+			height: auto;
 		}
 
 		&:before {
@@ -414,6 +420,14 @@ body {
 			top       : calc(50% - 201px);
 			background: url("../img/started-circle.png") no-repeat center / contain;
 			transition: .75s .25s;
+
+
+			@media(max-width:$md) {
+				width : 320px;
+				height: 320px;
+				left  : calc(50% - 160px);
+				top   : calc(50% - 160px);
+			}
 		}
 
 		&[data-scroll]:not(.is-inview):before {
@@ -424,21 +438,33 @@ body {
 		img {
 			position  : absolute;
 			display   : block;
-			height    : 725px;
-			width     : 874px;
+			height    : 694px;
+			width     : 982px;
 			max-width : none;
 			top       : calc(50% - 320px);
-			left      : calc(50% - 360px);
+			left      : calc(50% - 460px);
 			transition: .5s;
 
 			@media(max-width:$lg) {
-				top : calc(50% - 725px / 2);
-				left: calc(50% - 874px / 2 + 80px);
+				top  : calc(50% - 725px / 2);
+				left : calc(50% - 874px / 2 + 80px);
+				width: 770px;
+			}
+
+			@media(max-width:869px) {
+				top  : calc(50% - 725px / 2);
+				left : calc(50% - 874px / 2 + 50px);
+				width: 740px;
 			}
 
 			@media(max-width:$md) {
-				top : calc(50% - 725px / 2 + 50px);
-				left: calc(50% - 874px / 2 + 60px);
+				position   : relative;
+				width      : calc(100% + 200px);
+				height     : auto;
+				top        : calc(50% - 694px / 2);
+				left       : auto;
+				top        : auto;
+				margin-left: -100px;
 			}
 		}
 
